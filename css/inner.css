@@ -1,0 +1,574 @@
+/* ============================================================
+   Xavier High School — Inner Pages Stylesheet
+   ============================================================ */
+
+/* ---------- PAGE HERO ---------- */
+.page-hero {
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: white;
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+.page-hero .container { position: relative; z-index: 1; }
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 20px;
+}
+.breadcrumb a { color: rgba(255,255,255,0.6); }
+.breadcrumb a:hover { color: var(--gold); }
+.breadcrumb span { color: rgba(255,255,255,0.4); }
+.page-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.page-hero-desc {
+  font-size: 17px;
+  color: rgba(255,255,255,0.8);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* ---------- TWO COLUMN LAYOUT ---------- */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.two-col--reverse .two-col-text { order: 2; }
+.two-col--reverse .two-col-visual { order: 1; }
+.two-col-text p {
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  padding: 16px 20px;
+  margin: 28px 0;
+  font-style: italic;
+  color: var(--dark-gray);
+  font-size: 16px;
+  line-height: 1.7;
+  background: var(--off-white);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* Vision cards */
+.vision-cards { display: flex; flex-direction: column; gap: 20px; }
+.vision-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+.vision-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gold);
+}
+.vision-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 10px;
+}
+.vision-card p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---------- VALUES GRID ---------- */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.value-item {
+  padding: 32px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--light-gray);
+  transition: all var(--transition);
+}
+.value-item:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.value-number {
+  font-family: var(--font-serif);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--light-gray);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.value-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 10px;
+}
+.value-item p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ---------- TEAM GRID ---------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.team-card {
+  text-align: center;
+  padding: 36px 24px;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition);
+}
+.team-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+.team-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 6px;
+}
+.team-role {
+  font-size: 13px;
+  color: var(--gold-dark);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 14px;
+}
+.team-card p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ---------- CHECK LIST ---------- */
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0;
+}
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--dark-gray);
+}
+.check-list li::before {
+  content: '✓';
+  width: 22px;
+  height: 22px;
+  background: rgba(27, 58, 107, 0.1);
+  color: var(--blue-mid);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ---------- ACCREDITATION BADGES ---------- */
+.accreditation-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.acc-badge {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+.acc-badge:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.acc-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.acc-badge strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 4px;
+}
+.acc-badge span {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+/* ---------- ADMISSIONS PAGE ---------- */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  top: 36px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: var(--light-gray);
+  z-index: 0;
+}
+.step-item {
+  text-align: center;
+  padding: 0 16px;
+  position: relative;
+  z-index: 1;
+}
+.step-number {
+  width: 72px;
+  height: 72px;
+  background: var(--blue-dark);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 1;
+  border: 4px solid var(--white);
+  box-shadow: var(--shadow-md);
+}
+.step-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 10px;
+}
+.step-item p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Tuition table */
+.tuition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.tuition-table th {
+  background: var(--blue-dark);
+  color: var(--white);
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+.tuition-table th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+.tuition-table th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
+.tuition-table td {
+  padding: 14px 20px;
+  font-size: 14px;
+  color: var(--dark-gray);
+  border-bottom: 1px solid var(--light-gray);
+}
+.tuition-table tr:nth-child(even) td { background: var(--off-white); }
+.tuition-table tr:hover td { background: rgba(27, 58, 107, 0.04); }
+.price {
+  font-weight: 700;
+  color: var(--blue-dark);
+}
+
+/* FAQ accordion */
+.faq-list { display: flex; flex-direction: column; gap: 8px; }
+.faq-item {
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  background: var(--white);
+  border: none;
+  padding: 20px 24px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: background var(--transition);
+}
+.faq-question:hover { background: var(--off-white); }
+.faq-question.open { background: var(--blue-dark); color: white; }
+.faq-chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+.faq-question.open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.faq-answer.open { max-height: 300px; }
+.faq-answer-inner {
+  padding: 20px 24px;
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.75;
+  background: var(--off-white);
+}
+
+/* ---------- CONTACT PAGE ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+  align-items: start;
+}
+.contact-info h2 { font-family: var(--font-serif); font-size: 32px; color: var(--blue-dark); margin-bottom: 16px; }
+.contact-info p { font-size: 15px; color: var(--text-light); line-height: 1.8; margin-bottom: 32px; }
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.contact-detail-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(27, 58, 107, 0.08);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-mid);
+  flex-shrink: 0;
+}
+.contact-detail-icon svg { width: 20px; height: 20px; }
+.contact-detail strong { display: block; font-size: 14px; font-weight: 700; color: var(--blue-dark); margin-bottom: 4px; }
+.contact-detail span { font-size: 14px; color: var(--text-light); }
+.contact-form-wrapper {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 6px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--light-gray);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--white);
+  transition: border-color var(--transition);
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--blue-mid); box-shadow: 0 0 0 3px rgba(45, 90, 160, 0.1); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+
+/* ---------- ACADEMICS PAGE ---------- */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.course-tag {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--dark-gray);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.course-tag::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--blue-mid);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ---------- SUBJECTS GRID ---------- */
+.subjects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.subject-tag {
+  background: var(--white);
+  border: 1.5px solid var(--light-gray);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+/* ---------- IGCSE GRID ---------- */
+.igcse-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.igcse-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: all var(--transition);
+}
+.igcse-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.igcse-cat {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--gold);
+}
+.igcse-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.igcse-list li {
+  font-size: 14px;
+  color: var(--dark-gray);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.igcse-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--blue-mid);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ---------- STUDENT LIFE ---------- */
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.club-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  transition: all var(--transition);
+}
+.club-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.club-emoji { font-size: 36px; margin-bottom: 12px; }
+.club-card h4 { font-size: 15px; font-weight: 700; color: var(--blue-dark); margin-bottom: 6px; }
+.club-card p { font-size: 13px; color: var(--text-light); }
+
+/* ---------- RESPONSIVE INNER ---------- */
+@media (max-width: 1100px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .two-col { grid-template-columns: 1fr; gap: 40px; }
+  .two-col--reverse .two-col-text { order: 1; }
+  .two-col--reverse .two-col-visual { order: 2; }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .steps-grid::before { display: none; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .courses-grid { grid-template-columns: repeat(2, 1fr); }
+  .clubs-grid { grid-template-columns: repeat(2, 1fr); }
+  .igcse-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .igcse-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .accreditation-badges { grid-template-columns: 1fr; }
+  .courses-grid { grid-template-columns: 1fr; }
+  .clubs-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-form-wrapper { padding: 24px; }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xavier High School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4 L30 18 L44 18 L33 27 L37 42 L24 33 L11 42 L15 27 L4 18 L18 18 Z" fill="#F4A900" opacity="0.9"/>
+            <circle cx="24" cy="24" r="8" fill="#1B3A6B"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Xavier Next</span>
+          <span class="logo-sub">High School</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="about.html">About Us</a>
+            <ul class="dropdown">
+              <li><a href="about.html#mission">Mission &amp; Vision</a></li>
+              <li><a href="about.html#leadership">Leadership Team</a></li>
+              <li><a href="about.html#values">Core Values</a></li>
+              <li><a href="about.html#accreditation">Accreditation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="academics.html">Academics</a>
+            <ul class="dropdown">
+              <li><a href="academics.html#primary">Primary Years (Grades 1–4)</a></li>
+              <li><a href="academics.html#middle">Middle School (Grades 5–8)</a></li>
+              <li><a href="academics.html#igcse">IGCSE Programme (Grades 9–10)</a></li>
+              <li><a href="academics.html#alevel">A Level Programme (Grades 11–12)</a></li>
+              <li><a href="academics.html#approach">Our Learning Approach</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="admissions.html">Admissions</a>
+            <ul class="dropdown">
+              <li><a href="admissions.html#how">How to Apply</a></li>
+              <li><a href="admissions.html#tuition">Tuition &amp; Fees</a></li>
+              <li><a href="admissions.html#requirements">Requirements</a></li>
+              <li><a href="admissions.html#faq">FAQs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="student-life.html">Student Life</a>
+            <ul class="dropdown">
+              <li><a href="student-life.html#clubs">Clubs &amp; Activities</a></li>
+              <li><a href="student-life.html#sports">Athletics</a></li>
+              <li><a href="student-life.html#arts">Arts &amp; Culture</a></li>
+              <li><a href="student-life.html#community">Community Service</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="news.html">News &amp; Blog</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero">
+      <div class="hero-slides" id="hero-slides">
+
+        <!-- Slide 1 -->
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1920&q=80')">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="hero-tagline">Empowering Lifelong Learners</p>
+            <h1 class="hero-title">Nurturing Curiosity,<br/>Inspiring Growth</h1>
+            <p class="hero-desc">Xavier High School is a progressive learning community dedicated to nurturing curiosity, inspiring growth, and preparing students for the future — from Grade 1 to Grade 12.</p>
+            <div class="hero-actions">
+              <a href="admissions.html" class="btn btn-gold">Apply Now</a>
+              <a href="about.html" class="btn btn-outline-white">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1920&q=80')">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="hero-tagline">Inspiring Curiosity | Building Resilience</p>
+            <h1 class="hero-title">Education Beyond<br/>the Classroom</h1>
+            <p class="hero-desc">We focus on building character, resilience, and lifelong learning skills. Inspired by the symbolism of the phoenix — representing growth, transformation, and renewal.</p>
+            <div class="hero-actions">
+              <a href="academics.html" class="btn btn-gold">Explore Academics</a>
+              <a href="admissions.html" class="btn btn-outline-white">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&q=80')">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="hero-tagline">Grade 1 to Grade 12 · International Programme</p>
+            <h1 class="hero-title">Your Future<br/>Starts Here</h1>
+            <p class="hero-desc">From Primary Years through A Levels, our internationally focused academic programmes prepare students to thrive in a rapidly changing world.</p>
+            <div class="hero-actions">
+              <a href="academics.html" class="btn btn-gold">Our Programmes</a>
+              <a href="about.html" class="btn btn-outline-white">Our Story</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Slide Controls -->
+      <div class="hero-controls">
+        <button class="hero-prev" id="hero-prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="hero-dots" id="hero-dots">
+          <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+          <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+          <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+        <button class="hero-next" id="hero-next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+
+    <!-- STATS STRIP -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number" data-target="1">0</span><span class="stat-suffix">–12</span>
+            <span class="stat-label">Grades Offered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="4">0</span><span class="stat-suffix"></span>
+            <span class="stat-label">Academic Programmes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="40">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Subjects Offered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Dedicated to Your Child</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY PHOENIX -->
+    <section class="why-section section-pad">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">Why Parents Choose Xavier</h2>
+          <p class="section-subtitle">Parents choose Xavier High School because of our commitment to both academic excellence and personal development.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon feature-icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <h3>International Academic Programme</h3>
+            <p>A strong internationally focused curriculum from Grade 1 to Grade 12, preparing students for globally recognised qualifications and future academic success.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon feature-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            </div>
+            <h3>Individual Attention</h3>
+            <p>Every child is unique. Our school provides supportive, personalised teaching so each student receives the attention they need to reach their full potential.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon feature-icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3>Easy Access to Faculty</h3>
+            <p>Open, direct communication with teachers and management ensures families are always informed and students receive timely academic guidance and support.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon feature-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h3>Nurturing &amp; Inclusive Environment</h3>
+            <p>We create a warm, inclusive learning community where every student feels valued, supported, and motivated to grow academically and personally.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon feature-icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h3>Critical Thinking &amp; Creativity</h3>
+            <p>Our teaching methods — project-based learning, discussion, and independent inquiry — develop students who think deeply, creatively, and independently.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon feature-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3>Global Higher Education Pathways</h3>
+            <p>Preparation for global higher education opportunities through IGCSE and A Level qualifications — recognised by universities worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS / PATHWAYS -->
+    <section class="programs-section section-pad bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Programmes</span>
+          <h2 class="section-title">Learning at Every Level</h2>
+          <p class="section-subtitle">Our curriculum is structured into four stages — each designed to build on the last, from foundational skills to internationally recognised qualifications.</p>
+        </div>
+        <div class="programs-grid programs-grid--4">
+          <div class="program-card">
+            <div class="program-grade">Grades 1–4</div>
+            <h3 class="program-title">Primary Years</h3>
+            <p class="program-desc">Developing essential literacy, numeracy, and communication skills while encouraging curiosity and creativity — the foundation for confident learners.</p>
+            <ul class="program-highlights">
+              <li>English &amp; Mathematics</li>
+              <li>Science &amp; Social Studies</li>
+              <li>Art, Music &amp; PE</li>
+              <li>Creative Activities &amp; Life Skills</li>
+            </ul>
+            <a href="academics.html#primary" class="btn btn-outline-blue">Explore Programme</a>
+          </div>
+          <div class="program-card">
+            <div class="program-grade">Grades 5–8</div>
+            <h3 class="program-title">Middle School</h3>
+            <p class="program-desc">Students build deeper subject knowledge and develop analytical and research skills in preparation for the rigour of IGCSE.</p>
+            <ul class="program-highlights">
+              <li>Physics, Chemistry &amp; Biology</li>
+              <li>History &amp; Geography</li>
+              <li>Computer Science &amp; Drama</li>
+              <li>Spanish / Hindi</li>
+            </ul>
+            <a href="academics.html#middle" class="btn btn-outline-blue">Explore Programme</a>
+          </div>
+          <div class="program-card program-card--featured">
+            <div class="program-badge">International Qualification</div>
+            <div class="program-grade">Grades 9–10</div>
+            <h3 class="program-title">IGCSE Programme</h3>
+            <p class="program-desc">A comprehensive, internationally recognised programme covering Languages, Sciences, Business, Technology, and Creative subjects.</p>
+            <ul class="program-highlights">
+              <li>Cambridge IGCSE curriculum</li>
+              <li>20+ subject choices</li>
+              <li>Sciences, Business &amp; Arts</li>
+              <li>Globally recognised certificate</li>
+            </ul>
+            <a href="academics.html#igcse" class="btn btn-gold">Explore Programme</a>
+          </div>
+          <div class="program-card">
+            <div class="program-grade">Grades 11–12</div>
+            <h3 class="program-title">A Level Programme</h3>
+            <p class="program-desc">Students choose subjects aligned with their academic interests and career goals, preparing them for top universities worldwide.</p>
+            <ul class="program-highlights">
+              <li>Languages &amp; Humanities</li>
+              <li>Sciences &amp; Mathematics</li>
+              <li>Business &amp; Social Sciences</li>
+              <li>University pathway preparation</li>
+            </ul>
+            <a href="academics.html#alevel" class="btn btn-outline-blue">Explore Programme</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section section-pad">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Families Love Phoenix</span>
+          <h2 class="section-title">Hear from Our Community</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Xavier gave our daughter the structure of a traditional school with the freedom to excel at her own pace. She's now headed to her first-choice university!</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SC</div>
+              <div>
+                <strong>Sarah C.</strong>
+                <span>Parent of Class of 2024 Graduate</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">As a student-athlete, I needed flexibility without sacrificing academics. Xavier made it possible to compete nationally while staying on track for graduation.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JM</div>
+              <div>
+                <strong>James M.</strong>
+                <span>Current Senior, Class of 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">The teachers genuinely care. My son went from struggling in traditional school to thriving here. The personalized attention changed everything for our family.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RP</div>
+              <div>
+                <strong>Rachel P.</strong>
+                <span>Parent, enrolled since 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS PREVIEW -->
+    <section class="news-section section-pad bg-light">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="section-tag">Latest Updates</span>
+            <h2 class="section-title">News &amp; Announcements</h2>
+          </div>
+          <a href="news.html" class="btn btn-outline-blue">View All News</a>
+        </div>
+        <div class="news-grid">
+          <article class="news-card news-card--featured">
+            <div class="news-card-image" style="background:#1B3A6B">
+              <span class="news-category">Announcements</span>
+            </div>
+            <div class="news-card-body">
+              <time>March 20, 2025</time>
+              <h3><a href="news.html">Fall 2025 Enrollment Now Open — Apply Before April 30</a></h3>
+              <p>We're excited to welcome new families for the upcoming academic year. Spaces are limited — early applications receive priority review.</p>
+              <a href="admissions.html" class="read-more">Apply Now →</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card-image" style="background:#2D5AA0">
+              <span class="news-category">Academics</span>
+            </div>
+            <div class="news-card-body">
+              <time>March 10, 2025</time>
+              <h3><a href="news.html">5 Phoenix Students Earn National Merit Scholarship Recognition</a></h3>
+              <p>We're proud to celebrate five of our students recognized in this year's National Merit Scholarship Program.</p>
+              <a href="news.html" class="read-more">Read More →</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card-image" style="background:#F4A900">
+              <span class="news-category">Student Life</span>
+            </div>
+            <div class="news-card-body">
+              <time>February 28, 2025</time>
+              <h3><a href="news.html">Spring Co-op Day Brings 80+ Students Together in Austin, TX</a></h3>
+              <p>Students from across the state gathered for a day of workshops, performances, and community building.</p>
+              <a href="news.html" class="read-more">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2>Ready to Rise?</h2>
+            <p>Our goal is to ensure that every student leaves Xavier High School with the knowledge, confidence, and character needed to succeed in university and beyond.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="admissions.html" class="btn btn-gold btn-lg">Apply for Fall 2025</a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">Schedule a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4 L30 18 L44 18 L33 27 L37 42 L24 33 L11 42 L15 27 L4 18 L18 18 Z" fill="#F4A900" opacity="0.9"/>
+                <circle cx="24" cy="24" r="8" fill="white"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">Xavier Next</span>
+              <span class="logo-sub">High School</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Rising to excellence — one student at a time.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html#mission">Mission &amp; Vision</a></li>
+            <li><a href="about.html#leadership">Leadership</a></li>
+            <li><a href="about.html#values">Core Values</a></li>
+            <li><a href="about.html#accreditation">Accreditation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academics</h4>
+          <ul>
+            <li><a href="academics.html#middle">Middle School</a></li>
+            <li><a href="academics.html#high">High School</a></li>
+            <li><a href="academics.html#ap">AP Courses</a></li>
+            <li><a href="academics.html#dual">Dual Enrollment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admissions</h4>
+          <ul>
+            <li><a href="admissions.html#how">How to Apply</a></li>
+            <li><a href="admissions.html#tuition">Tuition &amp; Fees</a></li>
+            <li><a href="admissions.html#requirements">Requirements</a></li>
+            <li><a href="admissions.html#faq">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@phoenixnexths.edu">info@phoenixnexths.edu</a></li>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+            <li><a href="#">Parent Portal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Xavier High School. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
