@@ -110,11 +110,11 @@ ul { list-style: none; }
   white-space: nowrap;
 }
 .btn-primary {
-  background: var(--blue-mid);
+  background: #6B7280;
   color: var(--white);
-  border-color: var(--blue-mid);
+  border-color: #6B7280;
 }
-.btn-primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); color: var(--white); }
+.btn-primary:hover { background: #4B5563; border-color: #4B5563; color: var(--white); }
 .btn-gold {
   background: var(--gold);
   color: var(--blue-dark);
